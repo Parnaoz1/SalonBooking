@@ -1,0 +1,35 @@
+# Ignore Visual Studio user-specific files
+.vs/
+*.user
+*.suo
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore other environment-specific settings
+*.dbmdl
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio cache
+.vs/
+
+# Others
+*.log
+*.dbmdl
+*.pdb
+*.cache
+*.vspscc
+*.vssscc
