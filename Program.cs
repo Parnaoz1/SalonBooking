@@ -1,8 +1,10 @@
 using FluentAssertions.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SalonBooking.Data;
+using SalonBooking.Middleware;
 using SalonBooking.Models;
 using SalonBooking.Services;
 using SalonBooking.Services.Interfaces;
@@ -49,6 +51,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseMiddleware<TenantMiddleware>();
 
 app.UseHttpsRedirection();
 

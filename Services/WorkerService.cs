@@ -33,8 +33,8 @@ namespace SalonBooking.Services
                 if (WorkingHours == null)
                     continue;
 
-                var start = new DateTime(date.Year, date.Month, date.Day, WorkingHours.OpenTime.Hours, WorkingHours.OpenTime.Minutes, 0);
-                var end = new DateTime(date.Year, date.Month, date.Day, WorkingHours.CloseTime.Hours, WorkingHours.CloseTime.Minutes, 0);
+                var start = new DateTime(date.Year, date.Month, date.Day, WorkingHours.WorkStart.Hours, WorkingHours.WorkStart.Minutes, 0);
+                var end = new DateTime(date.Year, date.Month, date.Day, WorkingHours.WorkEnd.Hours, WorkingHours.WorkEnd.Minutes, 0);
 
                 bool isAvailable = true;
 

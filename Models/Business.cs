@@ -1,12 +1,16 @@
-﻿namespace SalonBooking.Models
+﻿using System.Globalization;
+
+namespace SalonBooking.Models
 {
     public class Business
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Slug { get; set; }    // for URL like mystartup.com/salonK
         public string Description { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
+        public string ImageUrl { get; set; }
 
         public ICollection<Review> Reviews { get; set; }
 

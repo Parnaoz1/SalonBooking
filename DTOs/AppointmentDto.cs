@@ -7,5 +7,6 @@
         public DateTime EndTime { get; set; }
         public int WorkerId { get; set; }
         public string UserId { get; set; }
+        public string ServiceId { get; set; }
     }
 }

@@ -6,8 +6,8 @@ namespace SalonBooking.Models
     {
         public int Id { get; set; }
         public DayOfWeek Day {  get; set; }
-        public TimeSpan OpenTime { get; set; }
-        public TimeSpan CloseTime { get; set; }
+        public TimeSpan WorkStart { get; set; }
+        public TimeSpan WorkEnd { get; set; }
         public DayOfWeek DayOfWeek { get; set; }
 
         public int WorkerId { get; set; }

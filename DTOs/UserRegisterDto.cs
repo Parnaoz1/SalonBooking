@@ -16,7 +16,7 @@ namespace SalonBooking.DTOs
         [MinLength(8)]
         public string Password { get; set; }    
 
-        public UserRole Role { get; set; } = UserRole.Client;
+        public UserRole Role { get; set; } = UserRole.Customer;
     }
 }
 

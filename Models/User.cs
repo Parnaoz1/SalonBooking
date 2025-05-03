@@ -20,7 +20,7 @@ namespace SalonBooking.Models
 
     public enum UserRole
     {
-        Client,
+        Customer,
         SalonOwner,
         Admin
     }

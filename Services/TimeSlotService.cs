@@ -24,8 +24,8 @@ namespace SalonBooking.Services
             if (wh == null)
                 return new List<TimeSpan>();
 
-            var start = wh.OpenTime;
-            var end = wh.CloseTime;
+            var start = wh.WorkStart;
+            var end = wh.WorkEnd;
 
             // 2) ყველა პოტენციური სლოტი 15-წუთიანი ინტერვალით
             var slots = new List<TimeSpan>();
